@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Roboto Slab", serif;
+    font-weight: bolder;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    color: #eee;
+    background-color: #222;
+    position: relative;
+    /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+}
+
+main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    width: 60rem;
+    background: url("./img/person-thinking.png") no-repeat;
+    background-size: 30rem;
+    background-position: 110px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    width: 52rem;
+    font-size: 2rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    background: url("./img/monitor.png") no-repeat;
+    background-size: cover;
+    color: #333;
+    font-size: 8rem;
+    width: 20rem;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.label-highscore {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+}
+.again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.guess {
+    background: none;
+    color: #000;
+    font-size: 7rem;
+    padding: 2.5rem;
+    width: 20rem;
+    text-align: center;
+    display: block;
+    margin-top: 0.2rem;
+    margin-bottom: 8rem;
+    border: none;
+    outline: none;
+    overflow-y: scroll;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.message {
+    margin-bottom: 8rem;
+    height: 3rem;
+}
+
+.label-score {
+    margin-bottom: 2rem;
+}
+
+.mine {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: 50px;
+    font-size: 24px;
+}
+
+a {
+    color: #fff;
+}
+
+/* MODAL SECTION */
+
+.modal {
+    height: 250px;
+    width: 400px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 50px;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+    position: fixed;
+    background-color: gray;
+    z-index: 1;
+}
+.modal-btn {
+    top: 50%;
+    left: 35%;
+}
+.again {
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hidden {
+    display: none;
+}
